@@ -1,0 +1,8 @@
+{
+  "name": "App-Control-Asistencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "39c3ede5"
+}
