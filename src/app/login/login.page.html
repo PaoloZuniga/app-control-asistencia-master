@@ -12,17 +12,14 @@
     <ion-card-content>
       <ion-item lines="full">
         <ion-label position="floating">Usuario</ion-label>
-        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
         <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
       </ion-item>
-      <ion-item lines="full">
-        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+      <ion-item lines="full">        
         <ion-label position="floating">contraseña</ion-label>
         <ion-input type="password" [(ngModel)]="user.password"></ion-input>
       </ion-item>
       <ion-row>
-        <ion-col>
-          <!-- Indicamos mediante el (click) la funcion a quien referenciara-->
+        <ion-col>          
           <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
         </ion-col>
       </ion-row>
@@ -33,8 +30,7 @@
 <ion-footer>
   <ion-toolbar color="primary">
     <ion-buttons slot="end">
-
-    <ion-buttons [routerLink] = "['Registro.']">Registro</ion-buttons>
+      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
   </ion-buttons>    
   </ion-toolbar>
 </ion-footer>
