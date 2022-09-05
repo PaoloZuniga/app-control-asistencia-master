@@ -25,10 +25,10 @@ export class Tab1Page {
   startLoad() {
     const loadingAnimation = this.animationCtrl.create('loading-animation')
       .addElement(this.loadingIcon.nativeElement)
-      .duration(1500)
-      .iterations(3)
+      .duration(2000)
+      .iterations(10)
       .fromTo('transform', 'rotate(0deg)', 'rotate(360deg)');
       
-    loadingAnimation.play();    
+      loadingAnimation.play();    
 }  
 }
