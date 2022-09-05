@@ -17,7 +17,7 @@
       </ion-item>
       <ion-item lines="full">
         <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
-        <ion-label position="floating">Contraseña</ion-label>
+        <ion-label position="floating">contraseña</ion-label>
         <ion-input type="password" [(ngModel)]="user.password"></ion-input>
       </ion-item>
       <ion-row>
@@ -28,5 +28,13 @@
       </ion-row>
     </ion-card-content>
   </ion-card>
-  
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+
+    <ion-buttons [routerLink] = "['Registro.']">Registro</ion-buttons>
+  </ion-buttons>    
+  </ion-toolbar>
+</ion-footer>
