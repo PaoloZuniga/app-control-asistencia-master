@@ -4,7 +4,14 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <ion-card>
 
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-label >Usuario: {{data.usuario}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
   <ion-content class="ion-padding-top">
     <ion-button expand="full" (click)="startLoad()">
       Load
