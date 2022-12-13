@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Geolocation } from '@capacitor/geolocation';
 
 @Component({
   selector: 'app-tab2',
