@@ -12,4 +12,8 @@ export class RegistroPage implements OnInit {
   ngOnInit() {
   }
 
+  guardar(){
+    console.log('guardar')
+  }
+  
 }

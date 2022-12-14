@@ -5,10 +5,10 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card >
     <ion-card-header>
       <ion-title>Registro</ion-title>
-      
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
       <ion-item>
         <ion-label position="floating">Usuario</ion-label>
         <ion-input></ion-input>
@@ -22,8 +22,9 @@
         <ion-input type="password"></ion-input>
       </ion-item>
       <ion-col>          
-        <ion-button expand="full" [routerLink]="['/login']">Ingresar</ion-button>
+        <ion-button expand="full" (click)="Guardar" >Guardar</ion-button>
       </ion-col>
+      </form>
     </ion-card-header>
   </ion-card>
 </ion-content>
